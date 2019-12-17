@@ -68,7 +68,7 @@ const ingameEmbed = new Discord.RichEmbed()
 
 const discordEmbed = new Discord.RichEmbed()
 .setColor('#00F2FF')
-.setDescription(`**What aspect of the Discord do you need assistance with?**\nThe two most common queries are listed below. If your query is not stated below contact one of our staff members (alist can be located by running !stafflist).\n\n**1)** How do I get my rank on discord?\n**2)** how do I create a ticket?`)
+.setDescription(`**What aspect of the Discord do you need assistance with?**\nThe two most common queries are listed below. If your query is not stated below contact one of our staff members (alist can be located by running !stafflist).\n\n**1)** How do I get my rank on discord?\n**2)** How do I create a ticket?`)
 .setAuthor('Discord')
 .setFooter(`Created by Thiimo#6969`)
 .setThumbnail(Tlink)
