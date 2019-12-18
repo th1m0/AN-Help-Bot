@@ -214,6 +214,7 @@ bot.on('message', message=>{
         message.delete();
         return message.reply("This command has a 30 second cooldown!")
     }
+    if(message.channel.name === 'bot-commands')
     cooldown.add(message.author.id);
 
     setTimeout(() => {
@@ -249,7 +250,7 @@ bot.on('message', message=>{
                                 collector.stop();
                             }
                             if (input2 === "2"){
-                                message.channel.send(forums2Embed); //changing to -> telling people to make a ticket for this issue.
+                                message.channel.send(forums2Embed); 
                                 collector.stop();
                             }
                             if (input2 === "3"){
@@ -280,7 +281,7 @@ bot.on('message', message=>{
                             collector.stop();
                          }
                         if (input2 === "4") {
-                            message.channel.send(ingame4Embed) //add ranktitles
+                            message.channel.send(ingame4Embed) 
                             collector.stop(); //possibility to add 
                          }
         
@@ -299,7 +300,7 @@ bot.on('message', message=>{
                             collector.stop();
                          }
                         if (input3 === "2") {
-                            message.channel.send(discord2Embed) //message [2] (how to create a ticket)
+                            message.channel.send(discord2Embed) //message [2] 
                             collector.stop();
                         } // possibility to add more inputs
 
