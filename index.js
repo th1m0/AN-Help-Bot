@@ -20,7 +20,7 @@ bot.on('ready', async () => {
             bot.user.setActivity("Developed by Thiimo#6969");
             activNum = 1;
         } else if (activNum === 1) {
-            bot.user.setActivity("Counting down!");
+            bot.user.setActivity("<help");
             activNum = 2;
         } else if (activNum === 2) {
             bot.user.setActivity("arkhamnetwork.org")
