@@ -211,7 +211,6 @@ bot.on('message', message=>{
     
     if(!message.content.startsWith(prefix)) return;
     if(cooldown.has(message.author.id)) {
-        message.delete();
         return message.reply("This command has a 30 second cooldown!")
     }
     if(message.channel.name === 'bot-commands')
