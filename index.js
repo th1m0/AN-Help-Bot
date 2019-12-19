@@ -209,7 +209,7 @@ bot.on('message', message=>{
     let args = messageArray.slice(1);
     let botchannel = message.guild.channels.find(`name`, "bot-commands")
     
-    if(!message.content.startsWith(prefix)) return;
+    if(!message.content.startsWith(prefix + 'help')) return;
     if(cooldown.has(message.author.id)) {
         return message.author.sendMessage("This command has a 30 second cooldown!")
     }
