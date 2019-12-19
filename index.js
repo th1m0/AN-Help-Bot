@@ -211,7 +211,7 @@ bot.on('message', message=>{
     
     if(!message.content.startsWith(prefix)) return;
     if(cooldown.has(message.author.id)) {
-        return message.author("This command has a 30 second cooldown!")
+        return message.author.sendMessage("This command has a 30 second cooldown!")
     }
     if(message.channel.name === 'bot-commands')
     cooldown.add(message.author.id);
