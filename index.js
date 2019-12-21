@@ -485,3 +485,28 @@ bot.on('message', message=>{
 
 
 });
+
+bot.on('message', function(message) {
+    
+  if (message.content === `${prefix}event`) {
+  
+  if (!message.member.hasPermissions('ADMINISTRATOR')) return message.channel.send('You don\'t have permissions.');
+  var deadline = new Date("Dec 22, 2019 21:16:00").getTime();
+  var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadline - now;
+      var days = Math.floor(t / (1000 * 60 * 60 *24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60 )) / 1000);
+      message.guild.channels.find("parentID", "654067096149557253").setName(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+          if (t <= 0) {
+              clearInterval(x);
+              message.guild.channels.find("parentID", "654067096149557253").setName('Event Started!')
+          }
+  }, 2.5 * 1000);
+
+
+
+}
+  });
