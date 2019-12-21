@@ -499,10 +499,10 @@ bot.on('message', function(message) {
       var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
       var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((t % (1000 * 60 )) / 1000);
-      message.guild.channels.find("parentID", "658067210287316992").setName(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+      message.guild.channels.find("parentID", "658067038451007488").setName(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
           if (t <= 0) {
               clearInterval(x);
-              message.guild.channels.find("parentID", "658067210287316992").setName('Event Started!')
+              message.guild.channels.find("parentID", "658067038451007488").setName('Event Started!')
           }
   }, 2.5 * 1000);
 
