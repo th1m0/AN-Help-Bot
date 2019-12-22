@@ -242,7 +242,7 @@ bot.on('message', message=>{
         cooldown.delete(message.author.id)
     }, cdseconds * 1000 
     );
-  
+   
 
     if (cmd === `${prefix}help`) {
         
