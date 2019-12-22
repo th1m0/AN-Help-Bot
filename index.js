@@ -1,7 +1,29 @@
 const Discord = require('discord.js');
-
 const { prefix, token } = require('./config.json')
+
+const fs = require("fs");
 const bot = new Discord.Client();
+bot.commands = new Discord.Collection();
+
+fs.readdir("./commands/", (err, files) => {
+  if(err) console.log(err);
+
+  var jsFiles = files.filter(f => f.split(".").pop() === "js");
+  if(jsFiles.length <=0) {
+      console.log("Can't find files.");
+      return;
+  }
+
+  jsFiles.forEach((f, i) => {
+      var fileGet = require(`./commands/${f}`);
+     // console.log(`The file ${f} is loaded.`)
+  
+      bot.commands.set(fileGet.help.name, fileGet);
+  })
+
+
+});
+
 
 let cooldown = new Set();
 let cdseconds = 30;
@@ -509,4 +531,21 @@ bot.on('message', function(message) {
 
 
 }
+  });
+  
+  
+  bot.on('message', async message => {
+
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+
+    var messageArray = message.content.split(" ");
+    var command = messageArray[0];
+    var args = messageArray.slice(1);
+
+
+    var commands = bot.commands.get(command.slice(prefix.length));
+    if(commands) commands.run(bot, message, args);
+
+
   });
