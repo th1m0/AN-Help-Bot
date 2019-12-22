@@ -244,8 +244,6 @@ bot.on('message', message=>{
     );
   
 
-
-
     if (cmd === `${prefix}help`) {
         
        
@@ -539,11 +537,13 @@ bot.on('message', function(message) {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
     if (!message.content.startsWith(prefix)) return;
-    
+
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
     var args = messageArray.slice(1);
-
+    let botchannel = message.guild.channels.find(`name`, "bot-commands")
+    
+    if(!message.channel.name === 'bot-commands') return;
 
     var commands = bot.commands.get(command.slice(prefix.length));
     if(commands) commands.run(bot, message, args);
