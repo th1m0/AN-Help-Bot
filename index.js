@@ -16,7 +16,7 @@ fs.readdir("./commands/", (err, files) => {
 
   jsFiles.forEach((f, i) => {
       var fileGet = require(`./commands/${f}`);
-     // console.log(`The file ${f} is loaded.`)
+      //console.log(`The file ${f} is loaded.`)
   
       bot.commands.set(fileGet.help.name, fileGet);
   })
@@ -538,7 +538,8 @@ bot.on('message', function(message) {
 
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
-
+    if (!message.content.startsWith(prefix)) return;
+    
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
     var args = messageArray.slice(1);
