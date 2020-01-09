@@ -2,6 +2,11 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     
+    if(!message.member.permissions.has("ADMINISTRATOR")) {
+        return message.channel.send("What did you aspect? That we give you permissions to this command?")
+    }
+
+
     let embed = new Discord.RichEmbed()
     .setTitle("𝓓𝓲𝓼𝓬𝓸𝓻𝓭 𝓡𝓾𝓵𝓮𝓼​")
     .setDescription(`The following are the official discord rules for Arkham Network, with each respective punishment listed below in red, increasing in severity with every same offence committed (once the last punishment is reached, it is repeated).
