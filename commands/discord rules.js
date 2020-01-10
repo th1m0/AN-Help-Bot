@@ -90,15 +90,7 @@ __**Troll Suggestions**__
 __**Inappropriate Streams**__
 *Using the discord streaming feature to stream inappropriate content.*
 1st Offence: Kick
-2nd Offence: Blacklist From Streaming
-
-
-__**Inappropriate Status**__
-*Using the discord custom status feature to say anything deemed inappropriate.*
-1st Offence: Warn
-2nd Offence: Kick
-3rd Offence: 3d Ban
-4th Offence: 7d Ban​`)
+2nd Offence: Blacklist From Streaming`)
 .setColor("#00F2FF")
     // .addBlankField()
     // .addField("__**Advertising is not allowed.**__", "Any form of advertising is not allowed. This includes but is not limited to; non-Serayne owned servers' IPs, discords (Faction discords are ONLY allowed to be sent in #faction-recruitment), scam links, phishing sites and malware sites.\n1st Offence: Perm Ban")
