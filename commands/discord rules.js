@@ -94,9 +94,15 @@ __**Inappropriate Streams**__
 .setColor("#00F2FF")
     // .addBlankField()
     // .addField("__**Advertising is not allowed.**__", "Any form of advertising is not allowed. This includes but is not limited to; non-Serayne owned servers' IPs, discords (Faction discords are ONLY allowed to be sent in #faction-recruitment), scam links, phishing sites and malware sites.\n1st Offence: Perm Ban")
-    await message.channel.send({files: ["https://arkhamnetwork.org/assets/img/portal/logo_new.png"]})
-    await message.channel.send(embed)
-    await message.channel.send(embed2)
+    
+
+
+    let rulesChannel = message.guild.channels.get("664879954718359602");
+
+    await rulesChannel.bulkDelete(3)
+    await rulesChannel.send({files: ["https://arkhamnetwork.org/assets/img/portal/logo_new.png"]})
+    await rulesChannel.send(embed)
+    await rulesChannel.send(embed2)
     
 }
 
