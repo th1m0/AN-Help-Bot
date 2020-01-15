@@ -500,7 +500,7 @@ bot.on('message', message=>{
 });
 
 bot.on('message', function(message) {
-    
+    const prefix = Aconfig.prefix;
   if (message.content === `${prefix}event`) {
   
   if (!message.member.hasPermissions('ADMINISTRATOR')) return message.channel.send('You don\'t have permissions.');
