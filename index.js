@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const  Aconfig = require('./config.json');
+const  { prefix } = require('./config.json');
 const fs = require("fs");
 const { config } = require("dotenv")
 
@@ -215,7 +215,6 @@ const forms4Embed = new Discord.RichEmbed()
 .setTimestamp()
 
 bot.on('message', message=>{
-    const prefix = Aconfig.prefix;
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
     
@@ -500,7 +499,6 @@ bot.on('message', message=>{
 });
 
 bot.on('message', function(message) {
-    const prefix = Aconfig.prefix;
   if (message.content === `${prefix}event`) {
   
   if (!message.member.hasPermissions('ADMINISTRATOR')) return message.channel.send('You don\'t have permissions.');
