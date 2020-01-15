@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ascii-table": "0.0.9",
     "beautify": "0.0.8",
     "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
     "request": "^2.88.0"
   }
 }

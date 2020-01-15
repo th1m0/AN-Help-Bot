@@ -1,7 +1,11 @@
-const Discord = require("discord.js");
-
-module.exports.run = async(bot, message, args) => {
-    let botchannel = message.guild.channels.find(`name`, "bot-commands")
+module.exports = {
+    name: "mcstatus",
+    aliases: ["serverstatus", "status", "Sstatus"],
+    description: "DESCRIPTION HERE!",
+    run: async (bot, message, args) => {
+        const Discord = require("discord.js");
+        
+        let botchannel = message.guild.channels.find(`name`, "bot-commands")
     if(message.channel.name === 'bot-commands') {    
     var request = require("request");
     var mcIP = "play.arkhamnetwork.org";
@@ -38,13 +42,7 @@ module.exports.run = async(bot, message, args) => {
     else {
         return message.channel.send(`Sorry, you can only use that command in ${botchannel}!`)
     }
-}
-
-
-
-
-module.exports.help = {
-    name: "status"
+    }
 }
 
 

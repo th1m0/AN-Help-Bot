@@ -1,29 +1,22 @@
-const Discord = require('discord.js');
-const { prefix, token } = require('./config.json')
-
+const discord = require('discord.js');
+const  Aconfig = require('./config.json');
 const fs = require("fs");
-const bot = new Discord.Client();
-bot.commands = new Discord.Collection();
-
-fs.readdir("./commands/", (err, files) => {
-  if(err) console.log(err);
-
-  var jsFiles = files.filter(f => f.split(".").pop() === "js");
-  if(jsFiles.length <=0) {
-      console.log("Can't find files.");
-      return;
-  }
-
-  jsFiles.forEach((f, i) => {
-      var fileGet = require(`./commands/${f}`);
-      //console.log(`The file ${f} is loaded.`)
-  
-      bot.commands.set(fileGet.help.name, fileGet);
-  })
+const { config } = require("dotenv")
 
 
+const bot = new discord.Client({
+    disableEveryone: true
+})
+bot.commands = new discord.Collection();
+bot.aliases = new discord.Collection();
+
+config({
+    path: __dirname + "/.env"
 });
 
+["command"].forEach(handler => {
+    require(`./handlers/${handler}`)(bot);
+});
 
 let cooldown = new Set();
 let cdseconds = 30;
