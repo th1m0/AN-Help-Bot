@@ -1,14 +1,14 @@
-const discord = require('discord.js');
+const Discord = require('discord.js');
 const  Aconfig = require('./config.json');
 const fs = require("fs");
 const { config } = require("dotenv")
 
 
-const bot = new discord.Client({
+const bot = new Discord.Client({
     disableEveryone: true
 })
-bot.commands = new discord.Collection();
-bot.aliases = new discord.Collection();
+bot.commands = new Discord.Collection();
+bot.aliases = new Discord.Collection();
 
 config({
     path: __dirname + "/.env"
