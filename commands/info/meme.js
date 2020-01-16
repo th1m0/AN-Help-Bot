@@ -8,6 +8,8 @@ module.exports = {
         const subReddits = ["dankmeme", "meme", "me_irl"];
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
         const img = await randomPuppy(random);
+        let botchannel = message.guild.channels.find(`name`, "bot-commands")
+        let memeChannel = message.guild.channels.find(`name`, "memes")
     const embed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setImage(img)
