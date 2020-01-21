@@ -515,7 +515,7 @@ bot.on('message', function(message) {
               clearInterval(x);
               message.guild.channels.find("parentID", "658067038451007488").setName('Event Started!')
           }
-  }, 2.5 * 1000);
+  }, 5 * 1000);
 
 
 
