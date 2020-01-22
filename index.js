@@ -32,13 +32,13 @@ bot.on('ready', async () => {
 
     setInterval(function() {
         if (activNum === 0) {
-            bot.user.setActivity("Developed by Thiimo#6969");
+            bot.user.setActivity('Developed by Thiimo#6969', {type: "STREAMING"});
             activNum = 1;
         } else if (activNum === 1) {
-            bot.user.setActivity("<help");
+            bot.user.setActivity("<help", {type: "WATCHING"});
             activNum = 2;
         } else if (activNum === 2) {
-            bot.user.setActivity("arkhamnetwork.org")
+            bot.user.setActivity("arkhamnetwork.org", {type: "PLAYING"})
             activNum = 0;
         }
     }, 15 * 1000);
