@@ -23,10 +23,23 @@ let cdseconds = 30;
 
 bot.login(process.env.token);
 
+var request = require("request");
+    var mcIP = "play.arkhamnetwork.org";
+    var mcPort = "25565";
+        
+    var url = "http://mcapi.us/server/status?ip=" + mcIP + '&port=' +mcPort;
+    request(url, function(err, responds, body) {
+        if(err) {
+            console.log(err);
+                
+            return message.reply('Error getting minecraft server status...');
+        }
+       body = JSON.parse(body);
+
 bot.on('ready', async () => {
     console.log(`${bot.user.username} is online!`);
 
-    bot.user.setActivity('', {type: ""});
+    
 
     let activNum = 0;
 
@@ -39,7 +52,10 @@ bot.on('ready', async () => {
             activNum = 2;
         } else if (activNum === 2) {
             bot.user.setActivity("arkhamnetwork.org", {type: "PLAYING"})
-            activNum = 0;
+            activNum = 3;
+        }else if(activNum === 3) {
+          bot.user.setActivity(`Players online: ${body.players.now}`, {type: "WATCHING"})
+          activNum = 0;
         }
     }, 15 * 1000);
 
@@ -54,6 +70,8 @@ bot.on('ready', async () => {
 
 
 });
+
+    });
 
 var Tlink = 'https://proxy.spigotmc.org/cfb5901de43c181fa5df991be11a9271b8d656de?url=http%3A%2F%2Fi.imgur.com%2FibZumoJ.png%3F1';
 
