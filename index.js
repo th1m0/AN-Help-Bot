@@ -38,11 +38,7 @@ var request = require("request");
 
 bot.on('ready', async () => {
     console.log(`${bot.user.username} is online!`);
-
-    
-
     let activNum = 0;
-
     setInterval(function() {
         if (activNum === 0) {
             bot.user.setActivity('Thiimo#6969', {type: "LISTENING"});
@@ -59,18 +55,13 @@ bot.on('ready', async () => {
         }
     }, 15 * 1000);
 
-
     try {
         let link = await bot.generateInvite(["ADMINISTRATOR"]);
         console.log(link);
     } catch(e) {
         console.log(e.stack);
     }
-
-
-
 });
-
     });
 
 var Tlink = 'https://proxy.spigotmc.org/cfb5901de43c181fa5df991be11a9271b8d656de?url=http%3A%2F%2Fi.imgur.com%2FibZumoJ.png%3F1';
@@ -559,3 +550,21 @@ bot.on('message', function(message) {
 
 
   });
+
+  bot.on("guildMemberAdd", member => {
+
+    let guild = member.guild;
+    const channel = member.guild.channels.find(ch => ch.name === 'welcome');
+    const discordRules = member.guild.channels.find(ch => ch.name === "discord-rules")
+    const discordInfo = member.guild.channels.find(ch => ch.name === "discord-information")
+    if(!channel) return;
+    const welcomeembed = new discord.RichEmbed()
+    .setColor('#00F2FF')
+    .setAuthor('ArkhamNetwork', 'https://pbs.twimg.com/profile_images/712122646297747456/KmsgDkHx_400x400.jpg')
+    .setTitle(`Welcome to Arkham's Discord, ${member.user.username}`)
+    .setDescription(`Enjoy your stay, ${member.user}\n\n⇒ IP: arkhamnetwork.org\n⇒ Website: https://arkhamnetwork.org/\n⇒ Store: https://buy.arkhamnetwork.org/\n\n⇒ Discord information: ${discordInfo}\n⇒ Discord Rules: ${discordRules} or https://bit.ly/34oa4Jf`)
+    .setFooter(`Total users: ${member.guild.memberCount}`, 'https://pbs.twimg.com/profile_images/712122646297747456/KmsgDkHx_400x400.jpg')
+    
+    member.user.createDM("test")
+    channel.send(welcomeembed);
+});
