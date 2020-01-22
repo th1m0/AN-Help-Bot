@@ -558,7 +558,7 @@ bot.on('message', function(message) {
     const discordRules = member.guild.channels.find(ch => ch.name === "discord-rules")
     const discordInfo = member.guild.channels.find(ch => ch.name === "discord-information")
     if(!channel) return;
-    const welcomeembed = new discord.RichEmbed()
+    const welcomeembed = new Discord.RichEmbed()
     .setColor('#00F2FF')
     .setAuthor('ArkhamNetwork', 'https://pbs.twimg.com/profile_images/712122646297747456/KmsgDkHx_400x400.jpg')
     .setTitle(`Welcome to Arkham's Discord, ${member.user.username}`)
