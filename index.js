@@ -32,7 +32,7 @@ bot.on('ready', async () => {
 
     setInterval(function() {
         if (activNum === 0) {
-            bot.user.setActivity('Developed by Thiimo#6969', {type: "LISTENING"});
+            bot.user.setActivity('Thiimo#6969', {type: "LISTENING"});
             activNum = 1;
         } else if (activNum === 1) {
             bot.user.setActivity("<help", {type: "WATCHING"});
