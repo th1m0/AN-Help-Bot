@@ -26,7 +26,7 @@ bot.login(process.env.token);
 bot.on('ready', async () => {
     console.log(`${bot.user.username} is online!`);
 
-    bot.user.setActivity('', {type: "PLAYING"});
+    bot.user.setActivity('', {type: ""});
 
     let activNum = 0;
 
