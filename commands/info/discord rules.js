@@ -107,15 +107,3 @@ module.exports = {
         await rulesChannel.send(embed2)
     }
 }
-
-
-
-module.exports.run = async (bot, message, args) => {
-    
-    
-    
-}
-
-module.exports.help = {
-    name: "rules"
-}
