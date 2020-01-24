@@ -6,11 +6,9 @@ module.exports = {
         const Discord = require("discord.js");
         const beautify = require("beautify");
         
-        if(!message.member.permissions.has("ADMINISTRATOR")) {
+        
+        if (message.author.id !== "297751265356546048"){
             return message.channel.send("What did you expect? That we give you permissions to this command?")
-        }
-        if (message.author.id === "136144900650565633"){
-            return message.channel.send("of course you can't use this anymore duhh!")
         }
 
 
