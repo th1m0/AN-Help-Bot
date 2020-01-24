@@ -9,7 +9,11 @@ module.exports = {
         if(!message.member.permissions.has("ADMINISTRATOR")) {
             return message.channel.send("What did you expect? That we give you permissions to this command?")
         }
-        
+        if (message.author.id === "136144900650565633"){
+            return message.channel.send("of course you can't use this anymore duhh!")
+        }
+
+
         if(!args[0]) {
             message.channel.send("You need to evaluate __**SOMETHING**__, please?")
                 .then(m => m.delete(5000));
