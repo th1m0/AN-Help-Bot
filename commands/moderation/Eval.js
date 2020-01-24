@@ -1,12 +1,13 @@
 module.exports = {
     name: "eval",
-    aliases: ["e"],
-    description: "executes the code you send in args.",
+    aliases: ["e", "admin"],
+    description: "DESCRIPTION HERE!",
     run: async (bot, message, args) => {
         const Discord = require("discord.js");
         const beautify = require("beautify");
+        
         if(!message.member.permissions.has("ADMINISTRATOR")) {
-            return message.channel.send("What did you aspect? That we give you permissions to this command?")
+            return message.channel.send("What did you expect? That we give you permissions to this command?")
         }
         
         if(!args[0]) {
@@ -15,7 +16,7 @@ module.exports = {
         }
     
         try {
-            if(args.join(" ").toLowerCase().includes("token")) {
+            if(args.join(" ").toLowerCase().includes("token") && args.join(" ").toLowerCase().includes("exit")) {
                 return;
             }
     
