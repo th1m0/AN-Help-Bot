@@ -16,7 +16,9 @@ module.exports = {
         }
     
         try {
-            if(args.join(" ").toLowerCase().includes("token") && args.join(" ").toLowerCase().includes("exit")) {
+            if(args.join(" ").toLowerCase().includes("token")) {
+                return;
+            }else if(args.join(" ").toLowerCase().includes("exit")) {
                 return;
             }
     
