@@ -7,9 +7,9 @@ const { config } = require("dotenv")
 const bot = new Discord.Client({
     disableEveryone: true
 })
-bot.commands = new Discord.Collection();
-bot.aliases = new Discord.Collection();
-
+bot.commands = new discord.Collection();
+bot.aliases = new discord.Collection();
+bot.categories = fs.readdirSync("./commands/");
 config({
     path: __dirname + "/.env"
 });
