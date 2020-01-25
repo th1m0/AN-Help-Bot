@@ -511,7 +511,7 @@ bot.on('message', function(message) {
   if (message.content === `${prefix}event`) {
   
   if (!message.member.hasPermissions('ADMINISTRATOR')) return message.channel.send('You don\'t have permissions.');
-  var deadline = new Date("Jan 25, 2020 22:00:00").getTime();
+  var deadline = new Date("Jan 25, 2020 23:00:00").getTime();
   var x = setInterval(function() {
       var now = new Date().getTime();
       var t = deadline - now;
