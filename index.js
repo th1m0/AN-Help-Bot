@@ -64,7 +64,7 @@ bot.on('ready', async () => {
 });
     });
 
-var Tlink = 'https://proxy.spigotmc.org/cfb5901de43c181fa5df991be11a9271b8d656de?url=http%3A%2F%2Fi.imgur.com%2FibZumoJ.png%3F1';
+var Tlink = 'http://i.imgur.com/ibZumoJ.png';
 
 const helpEmbed = new Discord.RichEmbed()
 .setColor('#00F2FF')
