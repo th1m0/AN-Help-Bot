@@ -570,7 +570,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${ftcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
-            
+             
             
             
             
