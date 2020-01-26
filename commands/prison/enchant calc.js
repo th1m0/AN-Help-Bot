@@ -773,7 +773,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${explcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${explcost9})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${explcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${explcost10})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${explcost1}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS9}) * ${explcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
             
