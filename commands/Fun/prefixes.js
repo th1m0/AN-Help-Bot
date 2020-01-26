@@ -11,7 +11,7 @@ module.exports = {
         .addField("Bots:", "Dyno\nTicket Tool\nCarl Bot\nRythm\nRythm 2\nZira", true)
         .addField("Prefixes:", "`?`\n`-`\n`$`\n`>`\n`>>`\n`/`", true) 
        if(message.author.id === "297751265356546048"){
-        message.author.send(embed)
+        message.author.send(embed).then(m => m.react("✅")).then(m => m.delete(2000))
        }else{
            return
        }
