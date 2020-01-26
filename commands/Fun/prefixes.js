@@ -10,12 +10,11 @@ module.exports = {
         .setAuthor(message.author.tag, message.author.avatarURL)
         .addField("Bots:", "Dyno\nTicket Tool\nCarl Bot\nRythm\nRythm 2\nZira", true)
         .addField("Prefixes:", "`?`\n`-`\n`$`\n`>`\n`>>`\n`/`", true) 
-       if(message.author.id === "297751265356546048"){
+       
         await message.author.send(embed)
         await message.react("✅")
         await message.delete(2000)
-       }else{
-           return
-       }
+       
+       
     }
 }
