@@ -121,6 +121,7 @@ module.exports = {
         .setAuthor(message.author.tag)
         .setTitle(args[2] + " levels of " + args[0] + " will cost you:")
         .setColor("RANDOM")
+        .setFoother("Found a bug? PM Thiimo#6969 | Arkhamnetwork")
         
         let usageEmbed = new discord.RichEmbed()
         .setColor("RANDOM")
