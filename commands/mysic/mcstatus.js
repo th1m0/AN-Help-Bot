@@ -1,6 +1,6 @@
 module.exports = {
     name: "mcstatus",
-    aliases: ["serverstatus", "status", "Sstatus"],
+    aliases: ["serverstatus", "status"],
     description: "DESCRIPTION HERE!",
     run: async (bot, message, args) => {
         const Discord = require("discord.js");
