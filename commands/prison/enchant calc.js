@@ -47,16 +47,16 @@ module.exports = {
         let maxFortune = 5000;
         
         //JACKHAMMER
-        let jhcost1 = 3;
-        let jhcost2 = 4;
-        let jhcost3 = 5;
-        let jhcost4 = 6;
-        let jhcost5 = 7;
-        let jhcost6 = 8;
-        let jhcost7 = 9;
-        let jhcost8 = 10;
-        let jhcost9 = 11;
-        let jhcost10 = 12;
+        let jhcost1 = 8;
+        let jhcost2 = 10;
+        let jhcost3 = 12;
+        let jhcost4 = 14;
+        let jhcost5 = 16;
+        let jhcost6 = 18;
+        let jhcost7 = 20;
+        let jhcost8 = 22;
+        let jhcost9 = 24;
+        let jhcost10 = 26;
         
         //EXPLOSIVE
         let explcost1 = 6;
