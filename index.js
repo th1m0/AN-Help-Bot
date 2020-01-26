@@ -532,24 +532,26 @@ bot.on('message', function(message) {
   });
   
   
-  bot.on('message', async message => {
+  bot.on("message", async message => {
+      
 
     if (message.author.bot) return;
-    if (message.channel.type === "dm") return;
+    if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
+    if (!message.member) message.member = await message.guild.fetchMember(message);
 
-    var messageArray = message.content.split(" ");
-    var command = messageArray[0];
-    var args = messageArray.slice(1);
-    let botchannel = message.guild.channels.find(`name`, "bot-commands")
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
     
-    if(!message.channel.name === 'bot-commands') return;
+    if (cmd.length === 0) return;
+    
+    let command = bot.commands.get(cmd);
+    if (!command) command = bot.commands.get(bot.aliases.get(cmd));
 
-    var commands = bot.commands.get(command.slice(prefix.length));
-    if(commands) commands.run(bot, message, args);
+    if (command) 
+        command.run(bot, message, args);
 
-
-  });
+});
 
   bot.on("guildMemberAdd", member => {
 
