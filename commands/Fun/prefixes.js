@@ -1,6 +1,6 @@
 module.exports = {
-    name: "ping",
-    aliases: ["p", "apistatus"],
+    name: "prefix",
+    aliases: ["prefixes", "pref"],
     description: "Returns latency and API ping",
     run: async (bot, message, args) => {
         const discord = require("discord.js");
