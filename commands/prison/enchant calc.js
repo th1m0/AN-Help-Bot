@@ -343,7 +343,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`(${CS1} - ${SN}) * ${jhcost1} + (${SN} + ${xNumber} - ${CN}) * ${jhcost2}`)+ "E-tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS3){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 3000 + (((${xNumber} + ${SN}) - ${CS2}) * ${jhcost3})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 5000 + (((${xNumber} + ${SN}) - ${CS2}) * ${jhcost3})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS4){
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 3000 + 4000 + (((${xNumber} + ${SN}) - ${CS3}) * ${jhcost4})`)+ " E-Tokens```")
@@ -364,7 +364,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${jhcost9})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${jhcost10})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${jhcost1}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS9}) * ${jhcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
             
