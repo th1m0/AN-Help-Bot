@@ -34,16 +34,16 @@ module.exports = {
         let effcost = 4;
 
         //FORTUNE
-        let ftcost1 = 8;
-        let ftcost2 = 8;
-        let ftcost3 = 8;
-        let ftcost4 = 8;
-        let ftcost5 = 8;
+        let ftcost1 = 3;
+        let ftcost2 = 4;
+        let ftcost3 = 5;
+        let ftcost4 = 6;
+        let ftcost5 = 7;
         let ftcost6 = 8;
-        let ftcost7 = 8;
-        let ftcost8 = 8;
-        let ftcost9 = 8;
-        let ftcost10 = 8;
+        let ftcost7 = 9;
+        let ftcost8 = 10;
+        let ftcost9 = 11;
+        let ftcost10 = 12;
         let maxFortune = 5000;
         
         //JACKHAMMER
