@@ -9,7 +9,7 @@ module.exports = {
         .setAuthor(message.author.tag)
         .setColor("RANDOM")
         .addField("Backpacks:", "Small backpack\nMedium Backpack\nLarge Backpack\nHuge Backpack\nGodly Backpack\nSwag Backpack\nEpic Backpack\nYolo Backpack", true)
-        .addField("Prices:", "`Free!`\n`☪ 50 E-tokens`\n`☪ 100 E-Tokens`\n`☪ 215 E-Tokens`\n`☪ 500 E-Tokens`\n`☪ 700 E-Tokens`", true)
+        .addField("Prices:", "`☪ 12 E-tokens!`\n`☪ 35 E-tokens`\n`☪ 100 E-Tokens`\n`☪ 200 E-Tokens`\n`☪ 350 E-Tokens`\n`☪ 500 E-Tokens`\n`☪ 1000 E-Tokens`\n`☪ 2000 E-Tokens`", true)
         
         
     let botchannel = message.guild.channels.find(`name`, "bot-commands")
