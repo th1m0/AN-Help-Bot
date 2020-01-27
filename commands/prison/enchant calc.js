@@ -125,7 +125,7 @@ module.exports = {
         
         let usageEmbed = new discord.RichEmbed()
         .setColor("RANDOM")
-        .setDescription("Command usage: `<calculate <enchant> <start number> <amount of levels up form start number>`")
+        .setDescription("Command usage: `<calculate <enchant> <start number> <amount of levels __up__ from the __start number__>`")
         .addField("Enchants:", `
 \`Efficiency\` \`fortune\` \`jackhammer\` \`explosive\` \`speed\` \`haste\` \`merchant\` \`autosell\` \`laser\``);
         
