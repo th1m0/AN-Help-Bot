@@ -93,15 +93,15 @@ module.exports = {
         
         //LASER
         let Lcost1 = 10; //5000
-        let Lcost2 = 10; //6000
-        let Lcost3 = 10; //7000
-        let Lcost4 = 10; //8000
-        let Lcost5 = 10; //9000
-        let Lcost6 = 10; //10000
-        let Lcost7 = 10;
-        let Lcost8 = 10;
-        let Lcost9 = 10;
-        let Lcost10 = 10;
+        let Lcost2 = 12; //6000
+        let Lcost3 = 14; //7000
+        let Lcost4 = 16; //8000
+        let Lcost5 = 18; //9000
+        let Lcost6 = 20; //10000
+        let Lcost7 = 22;
+        let Lcost8 = 24;
+        let Lcost9 = 26;
+        let Lcost10 = 28;
         
         
 
