@@ -956,28 +956,28 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`(${CS1} - ${SN}) * ${Lcost1} + (${SN} + ${xNumber} - ${CN}) * ${Lcost2}`)+ "E-tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS3){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + (((${xNumber} + ${SN}) - ${CS2}) * ${Lcost3})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + (((${xNumber} + ${SN}) - ${CS2}) * ${Lcost3})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS4){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + (((${xNumber} + ${SN}) - ${CS3}) * ${Lcost4})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS3}) * ${Lcost4})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS5){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS6){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + 6000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${AsMcost9})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${AsMcost9})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${Lcost1}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
             
@@ -991,25 +991,25 @@ module.exports = {
                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + ((${SN} + ${xNumber} - ${CS2}) * ${Lcost3})`)) + " E-Tokens```")
                    return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS3){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + (((${xNumber} + ${SN}) - ${CS3}) * ${Lcost4})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + (((${xNumber} + ${SN}) - ${CS3}) * ${Lcost4})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS4){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS5){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + 6000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${Lcost2}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
@@ -1021,22 +1021,22 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + ((${SN} + ${xNumber} - ${CS3}) * ${Lcost4})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS4){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + (((${xNumber} + ${SN}) - ${CS4}) * ${Lcost5})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS5){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + 6000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${Lcost3}) + 8000 + 9000 + 10000 + 11000 + 12000 + 11000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
             
@@ -1048,19 +1048,19 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + ((${SN} + ${xNumber} - ${CS4}) * ${Lcost5})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS5){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 6000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 9000 + (((${xNumber} + ${SN}) - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 9000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${Lcost4}) + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
             
@@ -1072,16 +1072,16 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + ((${SN} + ${xNumber} - ${CS5}) * ${Lcost6})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 10000 + (((${xNumber} + ${SN}) - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${Lcost5}) + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
@@ -1093,13 +1093,13 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + ((${SN} + ${xNumber} - ${CS6}) * ${Lcost7})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 11000 + (((${xNumber} + ${SN}) - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${Lcost6}) + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
@@ -1111,10 +1111,10 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${Lcost7}) + ((${SN} + ${xNumber} - ${CS7}) * ${Lcost8})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${Lcost7}) + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${Lcost7}) + 12000 + (((${xNumber} + ${SN}) - ${CS8}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${Lcost7}) + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${Lcost7}) + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
@@ -1126,7 +1126,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${Lcost8}) + ((${SN} + ${xNumber} - ${CS7}) * ${Lcost9})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
-                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${Lcost8}) + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${Lcost8}) + 13000 + (((${xNumber} + ${SN}) - ${CS9}) * ${Lcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
