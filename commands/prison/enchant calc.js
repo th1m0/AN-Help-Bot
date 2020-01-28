@@ -106,14 +106,6 @@ module.exports = {
         
 
 
-        if(args[0] === "fortune" || "jackhammer" || "explosive" || "merchant" || "autosell" | "laser" && args[1] >= CS1){
-            fortune = 4;
-            jackhammer = 4;
-            explosive = 4;
-            merchant = 4;
-            autoSell = 4;
-            laser = 4;
-        }
 
 
 
@@ -125,7 +117,7 @@ module.exports = {
         
         let usageEmbed = new discord.RichEmbed()
         .setColor("RANDOM")
-        .setDescription("Command usage: `<calculate <enchant> <start number> <amount of levels __up__ from the __start number__>`")
+        .setDescription("Command usage: `<calculate <enchant> <start number> <amount of levels up from the start number>`")
         .addField("Enchants:", `
 \`Efficiency\` \`fortune\` \`jackhammer\` \`explosive\` \`speed\` \`haste\` \`merchant\` \`autosell\` \`laser\``);
         
