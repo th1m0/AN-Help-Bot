@@ -1171,9 +1171,9 @@ module.exports = {
             }
         }
 
-        if(args[0] === "efficiency" || "fortune" || "jackhammer" || "explosive" || "speed" || "haste" || "merchant" || "autosell" || "laser"){
-            message.channel.send(usageEmbed)
-        }
+        // if(args[0] === "efficiency" || "fortune" || "jackhammer" || "explosive" || "speed" || "haste" || "merchant" || "autosell" || "laser"){
+        //     message.channel.send(usageEmbed)
+        // }
     
 
     }
