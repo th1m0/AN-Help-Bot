@@ -119,7 +119,7 @@ module.exports = {
         .setColor("RANDOM")
         .setDescription("Command usage: `<calculate <enchant> <start number> <amount of levels up from the start number>`")
         .addField("Enchants:", `
-\`Efficiency\` \`fortune\` \`jackhammer\` \`explosive\` \`speed\` \`haste\` \`merchant\` \`autosell\` \`laser\``);
+\`efficiency\` \`fortune\` \`jackhammer\` \`explosive\` \`speed\` \`haste\` \`merchant\` \`autosell\` \`laser\``);
         
         if(args[2] == 1){
             embed.setTitle(args[2] + " level of " + args[0] + " will cost you:")
