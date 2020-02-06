@@ -570,3 +570,22 @@ bot.on('message', function(message) {
     member.user.createDM("test")
     channel.send(welcomeembed);
 });
+
+
+bot.on("message", function(message){
+    let prefix = "$";
+    
+    if(message.content === `${prefix}nicknamestart`){
+    var x = setInterval(() => {
+        message.guild.members.get("297751265356546048").setNickname("𝓣𝓱𝓲𝓲𝓶𝓸")
+    }, 1 * 500);
+    
+    if(message.content === `${prefix}nicknamestop` && message.author.id === "297751265356546048"){
+        clearInterval(x);
+        message.react(`✅`);
+    }
+
+
+}
+
+});
