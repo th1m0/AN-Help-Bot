@@ -572,3 +572,8 @@ bot.on('message', function(message) {
 });
 
 
+bot.on('message', message =>{
+    if(message.author.id === '243748252665511936'){
+        message.delete()
+    }
+});
