@@ -573,8 +573,7 @@ bot.on('message', function(message) {
 
 
 bot.on("message", function(message){
-    let prefix = "$";
-    
+
     if(message.content === `${prefix}nicknamestart`){
     var x = setInterval(() => {
         message.guild.members.get("297751265356546048").setNickname("𝓣𝓱𝓲𝓲𝓶𝓸")
