@@ -31,6 +31,11 @@ module.exports = {
         let CS13 = 6500;
         let CS14 = 7000;
         let CS15 = 7500;
+        let CS16 = 8000;
+        let CS17 = 8500;
+        let CS18 = 9000;
+        let CS19 = 9500;
+        let CS20 = 10000;
         let CN = 500;
         //Lure | Luck of the sea | 
         
@@ -100,7 +105,17 @@ module.exports = {
         let AsMcost7 = 16; //8000
         let AsMcost8 = 18; //9000
         let AsMcost9 = 20; //10000
-        let AsMcost10 = 22;
+        let AsMcost10 = 22; //11000
+        let AsMcost11 = 24; //12000
+        let AsMcost12 = 26; //13000
+        let AsMcost13 = 28; //14000
+        let AsMcost14 = 30; //15000
+        let AsMcost15 = 32; //16000
+        let AsMcost16 = 34; //17000
+        let AsMcost17 = 36; //18000
+        let AsMcost18 = 38; //19000
+        let AsMcost19 = 40; //20000
+        let AsMcost20 = 42; //21000
         let maxAsM = 5000;
         
         //LASER
@@ -170,6 +185,36 @@ module.exports = {
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${AsMcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
             }
             
             
@@ -202,6 +247,36 @@ module.exports = {
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${AsMcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
 
 
@@ -229,6 +304,36 @@ module.exports = {
             }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS3} - ${SN}) * ${AsMcost3}) + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
             
             
@@ -253,6 +358,36 @@ module.exports = {
             }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS4 && SN >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS4} - ${SN}) * ${AsMcost4}) + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
             
 
@@ -274,6 +409,36 @@ module.exports = {
             }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS5 && SN >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS5} - ${SN}) * ${AsMcost5}) + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
 
 
@@ -292,6 +457,36 @@ module.exports = {
             }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS6 && SN >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS6} - ${SN}) * ${AsMcost6}) + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
 
 
@@ -307,6 +502,36 @@ module.exports = {
             }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS7 && SN >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS7} - ${SN}) * ${AsMcost7}) + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
 
 
@@ -319,6 +544,36 @@ module.exports = {
             }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + (((${xNumber} + ${SN}) - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + (((${xNumber} + ${SN}) - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + (((${xNumber} + ${SN}) - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + (((${xNumber} + ${SN}) - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS8 && SN >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS8} - ${SN}) * ${AsMcost8}) + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + (((${xNumber} + ${SN}) - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
 
 
@@ -327,6 +582,36 @@ module.exports = {
                     return message.channel.send(embed)
             }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + ((${SN} + ${xNumber} - ${CS9}) * ${AsMcost10})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + ((${SN} + ${xNumber} - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + ((${SN} + ${xNumber} - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + ((${SN} + ${xNumber} - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + ((${SN} + ${xNumber} - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS9 && SN >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS9} - ${SN}) * ${AsMcost9}) + 11000 + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
                     return message.channel.send(embed)
             }
 
@@ -334,7 +619,242 @@ module.exports = {
             else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + xNumber * AsMcost10 + " E-Tokens```")
                     return message.channel.send(embed)
-            }else{
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                    embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + ((${SN} + ${xNumber} - ${CS10}) * ${AsMcost11})`)) + " E-Tokens```")
+                        return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + ((${SN} + ${xNumber} - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + ((${SN} + ${xNumber} - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + ((${SN} + ${xNumber} - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS10 && SN >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS10} - ${SN}) * ${AsMcost10}) + 12000 + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+            
+            
+            
+            else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost11 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + ((${SN} + ${xNumber} - ${CS11}) * ${AsMcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + ((${SN} + ${xNumber} - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + ((${SN} + ${xNumber} - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS11 && SN >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS11} - ${SN}) * ${AsMcost11}) + 13000 + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+            
+
+
+            else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost12 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + ((${SN} + ${xNumber} - ${CS12}) * ${AsMcost13})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + ((${SN} + ${xNumber} - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS12 && SN >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS12} - ${SN}) * ${AsMcost12}) + 14000 + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+
+
+            else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost13 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + ((${SN} + ${xNumber} - ${CS13}) * ${AsMcost14})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS13 && SN >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS13} - ${SN}) * ${AsMcost13}) + 15000 + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+
+            else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost14 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + ((${SN} + ${xNumber} - ${CS14}) * ${AsMcost15})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + 16000 + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + 16000 + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + 16000 + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + 16000 + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS14 && SN >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS14} - ${SN}) * ${AsMcost14}) + 16000 + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+            else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost15 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS15} - ${SN}) * ${AsMcost15}) + ((${SN} + ${xNumber} - ${CS15}) * ${AsMcost16})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS15} - ${SN}) * ${AsMcost15}) + 17000 + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS15} - ${SN}) * ${AsMcost15}) + 17000 + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS15} - ${SN}) * ${AsMcost15}) + 17000 + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS15 && SN >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS15} - ${SN}) * ${AsMcost15}) + 17000 + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+
+            else if(SN < CS16 && SN >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS15){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost16 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS16 && SN >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS16} - ${SN}) * ${AsMcost16}) + ((${SN} + ${xNumber} - ${CS16}) * ${AsMcost17})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS16 && SN >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS16} - ${SN}) * ${AsMcost16}) + 18000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS16 && SN >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS16} - ${SN}) * ${AsMcost16}) + 18000 + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS16 && SN >= CS15 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS16} - ${SN}) * ${AsMcost16}) + 18000 + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+            
+            else if(SN < CS17 && SN >= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS16){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost17 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS17 && SN >= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS17} - ${SN}) * ${AsMcost17}) + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost18})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS17 && SN >= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS17} - ${SN}) * ${AsMcost17}) + 19000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS17 && SN >= CS16 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS17} - ${SN}) * ${AsMcost17}) + 19000 + 20000 + ((${SN} + ${xNumber} - ${CS17}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+            else if(SN < CS18 && SN >= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS17){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost18 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS18 && SN >= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS18} - ${SN}) * ${AsMcost18}) + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }else if(SN < CS18 && SN >= CS17 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS18} - ${SN}) * ${AsMcost18}) + 20000 + ((${SN} + ${xNumber} - ${CS18}) * ${AsMcost19})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+
+            else if(SN < CS19 && SN >= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS18){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost19 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS19 && SN >= CS18 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS19} - ${SN}) * ${AsMcost19}) + ((${SN} + ${xNumber} - ${CS19}) * ${AsMcost20})`)) + " E-Tokens```")
+                    return message.channel.send(embed)   
+            }
+
+
+            else if(SN < CS20 && SN >= CS19 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS20 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS19){
+                embed.setDescription("``` ☪ " + xNumber * AsMcost20 + " E-Tokens```")
+                    return message.channel.send(embed)
+            }
+
+
+                else{
                 message.channel.send(usageEmbed)
             }
         }
