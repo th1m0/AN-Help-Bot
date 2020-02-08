@@ -551,7 +551,7 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`(${CS1} - ${SN}) * ${ftcost1} + (${SN} + ${xNumber} - ${CN}) * ${ftcost2}`)+ "E-tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS3){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + (((${xNumber} + ${SN}) - ${CS2}) * ${ftcost3})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + (((${xNumber} + ${SN}) - ${CS2}) * ${ftcost3})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS4){
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + (((${xNumber} + ${SN}) - ${CS3}) * ${ftcost4})`)+ " E-Tokens```")
@@ -621,7 +621,19 @@ module.exports = {
             }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9){
                 embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${ftcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${ftcost10})`)) + " E-Tokens```")
                     return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${ftcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${ftcost11})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${ftcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${ftcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS2 && SN >= CS1 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12){
+                embed.setDescription("``` ☪ " + (math.evaluate(`((${CS2} - ${SN}) * ${ftcost2}) + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS11}) * ${ftcost12})`)) + " E-Tokens```")
+                    return message.channel.send(embed)
             }
+
+
+
 
 
             else if(SN < CS3 && SN >= CS2 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS2){
