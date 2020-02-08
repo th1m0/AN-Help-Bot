@@ -26,6 +26,11 @@ module.exports = {
         let CS8 = 4000;
         let CS9 = 4500;
         let CS10 = 5000;
+        let CS11 = 5500;
+        let CS12 = 6000;
+        let CS13 = 6500;
+        let CS14 = 7000;
+        let CS15 = 7500;
         let CN = 500;
         //Lure | Luck of the sea | 
         
@@ -44,6 +49,13 @@ module.exports = {
         let ftcost8 = 10;
         let ftcost9 = 11;
         let ftcost10 = 12;
+        let ftcost11 = 14;
+        let ftcost12 = 16;
+        let ftcost13 = 18;
+        let ftcost14 = 20;
+        let ftcost15 = 22;
+        
+
         let maxFortune = 5000;
         
         //JACKHAMMER
@@ -561,6 +573,21 @@ module.exports = {
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${ftcost10})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${ftcost11})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${ftcost12})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${ftcost13})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost14})`)+ " E-Tokens```")
+                    return message.channel.send(embed)
+            }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15){
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost15})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
              
