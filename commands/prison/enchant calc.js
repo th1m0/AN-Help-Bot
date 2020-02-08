@@ -39,21 +39,21 @@ module.exports = {
         let effcost = 4;
 
         //FORTUNE
-        let ftcost1 = 3;
-        let ftcost2 = 4;
-        let ftcost3 = 5;
-        let ftcost4 = 6;
-        let ftcost5 = 7;
-        let ftcost6 = 8;
-        let ftcost7 = 9;
-        let ftcost8 = 10;
-        let ftcost9 = 11;
-        let ftcost10 = 12;
-        let ftcost11 = 14;
-        let ftcost12 = 16;
-        let ftcost13 = 18;
-        let ftcost14 = 20;
-        let ftcost15 = 22;
+        let ftcost1 = 3;    //1500
+        let ftcost2 = 4;    //2000
+        let ftcost3 = 5;    //2500
+        let ftcost4 = 6;    //3000
+        let ftcost5 = 7;    //3500
+        let ftcost6 = 8;    //4000
+        let ftcost7 = 9;    //4500
+        let ftcost8 = 10;   //5000
+        let ftcost9 = 11;   //5500
+        let ftcost10 = 12;  //6000
+        let ftcost11 = 14;  //7000
+        let ftcost12 = 16;  //8000
+        let ftcost13 = 18;  //9000
+        let ftcost14 = 20;  //10000
+        let ftcost15 = 22;  //11000
         
 
         let maxFortune = 5000;
@@ -554,40 +554,40 @@ module.exports = {
                 embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + (((${xNumber} + ${SN}) - ${CS2}) * ${ftcost3})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS3 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS4){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + (((${xNumber} + ${SN}) - ${CS3}) * ${ftcost4})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + (((${xNumber} + ${SN}) - ${CS3}) * ${ftcost4})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS4 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS5){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + (((${xNumber} + ${SN}) - ${CS4}) * ${ftcost5})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + (((${xNumber} + ${SN}) - ${CS4}) * ${ftcost5})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS5 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS6){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + (((${xNumber} + ${SN}) - ${CS5}) * ${ftcost6})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + (((${xNumber} + ${SN}) - ${CS5}) * ${ftcost6})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS6 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS7){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS6}) * ${ftcost7})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 2500 + 3000 + 3500 + 4000 + (((${xNumber} + ${SN}) - ${CS6}) * ${ftcost7})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS7 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS8){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS7}) * ${ftcost8})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + (((${xNumber} + ${SN}) - ${CS7}) * ${ftcost8})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS8 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS9){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS8}) * ${ftcost9})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + (((${xNumber} + ${SN}) - ${CS8}) * ${ftcost9})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS9 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS10){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS9}) * ${ftcost10})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + (((${xNumber} + ${SN}) - ${CS9}) * ${ftcost10})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS10 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS11){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + (((${xNumber} + ${SN}) - ${CS10}) * ${ftcost11})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + 6000 + (((${xNumber} + ${SN}) - ${CS10}) * ${ftcost11})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS11 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS12){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + (((${xNumber} + ${SN}) - ${CS11}) * ${ftcost12})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + 6000 + 7000 + (((${xNumber} + ${SN}) - ${CS11}) * ${ftcost12})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS12 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS13){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + (((${xNumber} + ${SN}) - ${CS12}) * ${ftcost13})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + 6000 + 7000 + 8000 + (((${xNumber} + ${SN}) - ${CS12}) * ${ftcost13})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS13 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS14){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost14})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + 6000 + 7000 + 8000 + 9000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost14})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }else if(SN < CS1 && (math.evaluate(`${SN} + ${xNumber}`)) >= CS14 && (math.evaluate(`${SN} + ${xNumber}`)) <= CS15){
-                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 + 11000 + 12000 + 13000 + 14000 + 15000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost15})`)+ " E-Tokens```")
+                embed.setDescription("``` ☪ " + math.evaluate(`((${CS1} - ${SN}) * ${ftcost1}) + 2000 + 2500 + 3000 + 3500 + 4000 + 4500 + 5000 + 5500 + 6000 + 7000 + 8000 + 9000 + 10000 + (((${xNumber} + ${SN}) - ${CS13}) * ${ftcost15})`)+ " E-Tokens```")
                     return message.channel.send(embed)
             }
              
